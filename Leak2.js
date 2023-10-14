@@ -50,6 +50,10 @@ class NamesList extends React.Component {
     };
   };
 
+  componentWillUnmount() {
+    this.memory = null; // <---Clear the memory variable
+  } 
+
   render() {
     return (
       <SectionList

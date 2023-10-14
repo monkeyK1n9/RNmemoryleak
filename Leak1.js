@@ -21,6 +21,7 @@ export default class DetailsScreen extends React.Component {
 
   componentWillUnmount() {
     clearInterval(this.interval);
+    this.memory = null; // <---Add this line
   }
 
   refresh = () => {
